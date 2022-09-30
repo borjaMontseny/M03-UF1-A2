@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ex4 {
+public class Ex04 {
 
 	public static void main(String[] args) {
 		

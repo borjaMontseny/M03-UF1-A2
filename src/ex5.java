@@ -8,10 +8,10 @@ public class ex5 {
 		Scanner sc = new Scanner(System.in);
 		int numA = sc.nextInt();
 
-		System.out.println("Introdueix numB: ");
+		System.out.print("Introdueix numB: ");
 		int numB = sc.nextInt();
 
-		System.out.println("Introdueix numC: ");
+		System.out.print("Introdueix numC: ");
 		int numC = sc.nextInt();
 
 		int gran = 0;
@@ -45,7 +45,18 @@ public class ex5 {
 			System.out.println("Error");
 		}
 
+		// IF per buscar el num mitjà
+		if (numA < numB && numA > numC) {
+			mitja = numA;
+		} else if (numB < numA && numB > numC) {
+			mitja = numB;
+		} else if (numC < numA && numC > numB) {
+			mitja = numC;
+		}
+		
 		sc.close();
+		
+		System.out.println("De petit a gran: " + petit + " | " + mitja + " | " + gran);
 	}
 
 }

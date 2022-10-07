@@ -9,6 +9,8 @@ public class Ex13 {
 		 * dimecres... i que et tradueixi aquesta cadena a un enter.
 		 */
 
+		
+		
 	}
 
 }

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ex04 {
 
 	public static void main(String[] args) {
-		
+
 		System.out.print("Introdueix un enter del 1 al 7: ");
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
@@ -25,9 +25,9 @@ public class Ex04 {
 		} else {
 			System.out.println("Error. Reinicia el programa.");
 		}
-		
+
 		sc.close();
-		
+
 	}
 
 }

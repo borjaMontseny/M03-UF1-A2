@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Ex09 {
 
@@ -5,14 +6,34 @@ public class Ex09 {
 		// TODO Auto-generated method stub
 
 		/*
-		 * 9. Escriu un programa que demani els anys treballats d’un treballador que
+		 * Escriu un programa que demani els anys treballats d’un treballador que
 		 * cobra 40.000 euros anuals i digui el sou que li correspon segons els següents
-		 * criteris: 1. Si porta treballant 10 anys o més → augment del 10% 2. Si porta
-		 * treballant menys de 10 anys, però 5 o més → augment del 7% 3. Si porta
-		 * treballant menys de 5 anys, però 3 o més → augment del 5% 4. Si porta menys
-		 * de 3 anys → augment del 3%
-		 * 
+		 * criteris:
 		 */
+
+		double souBase = 40000;
+
+		System.out.print("Anys treballats: ");
+		Scanner sc = new Scanner(System.in);
+		int anysTreballats = sc.nextInt();
+		sc.close();
+
+		if (anysTreballats >= 10) {
+			souBase = souBase * 1.10;
+			System.out.println("El sou que et pertoca es de " + souBase + "€");
+
+		} else if (anysTreballats < 10 && anysTreballats >= 5) {
+			souBase = souBase * 1.07;
+			System.out.println("El sou que et pertoca es de " + souBase + "€");
+
+		} else if (anysTreballats < 5 && anysTreballats >= 3) {
+			souBase = souBase * 1.05;
+			System.out.println("El sou que et pertoca es de " + souBase + "€");
+		} else if (anysTreballats < 3) {
+			souBase = souBase * 1.03;
+			System.out.println("El sou que et pertoca es de " + souBase + "€");
+		}
+
 	}
 
 }

@@ -6,26 +6,30 @@ public class Ex07 {
 		// TODO Auto-generated method stub
 
 		/*
-		 * Escriu un programa que demani un import sense impostos, i ens digui l'import
-		 * aplicant els impostos, si és major de 15000 se li aplicarà un 16% d’impostos,
-		 * en cas contrari un 10%.
+		 * Escriu un programa que demani 3 números i digui si la multiplicació dels dos
+		 * primers és igual al tercer.
 		 */
 
-		System.out.print("Introduce un importe bruto: ");
-		Scanner sc = new Scanner(System.in);
-		double importe = sc.nextDouble();
+			System.out.print("Introdueix numA: ");
+			Scanner sc = new Scanner(System.in);
+			int numA = sc.nextInt();
 
-		// Cerramos teclado, ya no nos hace falta
-		sc.close();
+			System.out.print("Introdueix numB: ");
+			int numB = sc.nextInt();
 
-		if (importe >= 15000) {
-			importe = importe * 1.16;
-			System.out.print("Total a pagar: " + importe + "€");
-		} else {
-			importe = importe * 1.10;
-			System.out.println("Total a pagar: " + importe + "€");
+			System.out.print("Introdueix numC: ");
+			int numC = sc.nextInt();
+			
+			sc.close();
+
+			if ((numA * numB) == numC) {
+				System.out.println("La multiplicació dels dos primers valors és igual al tercer valor");
+				System.out.println(numA + " × " + numB + " = " + (numA * numB) + " | Tercer valor = " + numC);
+			} else {
+				System.out.println("La multiplicació dels dos primers valors NO és igual al tercer valor");
+				System.out.println(numA + " × " + numB + " = " + (numA * numB) + " | Tercer valor = " + numC);
+			}
+			
 		}
 
 	}
-
-}

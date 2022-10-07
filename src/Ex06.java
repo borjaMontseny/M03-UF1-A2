@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ex06 {
 
 	/*
-	 * Escriu un programa que demani 3 números i digui si la multiplicació dels dos
+	 * Escriu un programa que demani 3 números i digui si la suma dels dos
 	 * primers és igual al tercer
 	 */
 
@@ -21,12 +21,12 @@ public class Ex06 {
 		
 		sc.close();
 
-		if ((numA * numB) == numC) {
+		if ((numA + numB) == numC) {
 			System.out.println("La suma dels dos primers valors és igual al tercer valor");
-			System.out.println(numA + " * " + numB + " = " + (numA * numB) + " | Tercer valor = " + numC);
+			System.out.println(numA + " + " + numB + " = " + (numA * numB) + " | Tercer valor = " + numC);
 		} else {
 			System.out.println("La suma dels dos primers valors NO és igual al tercer valor");
-			System.out.println(numA + " * " + numB + " = " + (numA * numB) + " | Tercer valor = " + numC);
+			System.out.println(numA + " + " + numB + " = " + (numA * numB) + " | Tercer valor = " + numC);
 		}
 		
 	}

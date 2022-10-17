@@ -20,19 +20,19 @@ public class Ex09 {
 
 		if (anysTreballats >= 10) {
 			souBase = souBase * 1.10;
-			System.out.println("El sou que et pertoca es de " + souBase + "€");
 
-		} else if (anysTreballats < 10 && anysTreballats >= 5) {
+		} else if (anysTreballats >= 5) {
 			souBase = souBase * 1.07;
-			System.out.println("El sou que et pertoca es de " + souBase + "€");
 
-		} else if (anysTreballats < 5 && anysTreballats >= 3) {
+		} else if (anysTreballats >= 3) {
 			souBase = souBase * 1.05;
-			System.out.println("El sou que et pertoca es de " + souBase + "€");
-		} else if (anysTreballats < 3) {
+			
+			// podria ser directamente un else, ya que és cualquier otro caso
+		} else {
 			souBase = souBase * 1.03;
-			System.out.println("El sou que et pertoca es de " + souBase + "€");
 		}
+		
+		System.out.println("El sou que et pertoca és de " + souBase + "€");
 
 	}
 
